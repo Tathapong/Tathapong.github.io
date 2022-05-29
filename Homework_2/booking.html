@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            
+            
+        }
+        th {
+            border-top: 1px solid whitesmoke;
+            border-left: 1px solid whitesmoke;
+            border-right: 1px solid whitesmoke;
+            padding: 10px;
+            background-color: #0099CC;
+            color: whitesmoke;
+        }
+        td {
+            font-family:Arial, Helvetica, sans-serif;
+            /* border: 1px solid skyblue; */
+            background-color: whitesmoke;
+            font-weight: bold;
+            font-size: 13px;
+            /* text-decoration: underline; */
+        }
+        select {
+            padding-block: 5px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: antiquewhite;
+        }
+        input[type="date"]{
+            padding-block: 5px;
+            border-radius: 5px;
+            background-color: antiquewhite;
+        }
+        input[type="number"] {
+            background-color: antiquewhite;
+            padding-block: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        input[type="submit"] {
+            background-color: #F7602E;
+            color: white;
+            font-weight: bold;
+            
+            padding-block: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <Table>
+            <tr>
+                <th><img src="./plane_icon.png" style="height: 1em;"> Book Fight</th>
+                <th><img src="./calendar_icon.png" style="height: 1em;"> Schedule</th>
+                <th><img src="./ticket_icon.png" style="height: 1em;"> Ticket</th>
+                <th><img src="./hotel_icon.png" style="height: 1em;"> Hotel</th>
+            </tr>
+            <tr>
+                <td colspan="2"  style="padding-top: 20px; padding-bottom: 20px;">
+                    Flying form <br> <br>
+                    <select name="from" id="from">
+                        <option value="Bangkok">Bangkok, Thailand</option>
+                        <option value="Phuket">Phuket, Thailand</option>
+                        <option value="Hatyai">Hatyai, Thailand</option>
+                        <option value="Chiangmai">Chiangmai, Thailand</option>
+                        <option value="Chiangrai">Chiangrai, Thailand</option>
+                    </select>
+                
+                </td>
+                <td colspan="2" style="padding-top: 20px; padding-bottom: 20px;">
+                    To <br> <br>
+                    <select name="from" id="from">
+                        <option value="Bangkok">Bangkok, Thailand</option>
+                        <option value="Phuket">Phuket, Thailand</option>
+                        <option value="Hatyai">Hatyai, Thailand</option>
+                        <option value="Chiangmai">Chiangmai, Thailand</option>
+                        <option value="Chiangrai">Chiangrai, Thailand</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2"  style="padding-top: 20px; padding-bottom: 20px;">
+                    Departing <br> <br>
+                    <input type="date" name="departing" id="departing">
+                </td>
+                <td colspan="2"  style="padding-top: 20px; padding-bottom: 20px;">
+                    Returning <br> <br>
+                    <input type="date" name="returning" id="returning">
+                </td> 
+            </tr>
+            <tr>
+                <td>
+                    Adult <br><br>
+                    <input type="number" id="adult" name="adult" min="0" max="10" style="width: 50px;"> <br>
+                </td>
+                <td>
+                    Child <br><br>
+                    <input type="number" id="child" name="child" min="0" max="10" style="width: 50px;"> <br>
+                </td>
+                <td>
+                    Infant <br><br>
+                    <input type="number" id="infant" name="infant" min="0" max="10" style="width: 50px;"> <br>
+                </td>
+                <td style="padding-top: 20px; padding-bottom: 20px;">
+                    Currency <br> <br>
+                    <select name="currency" id="currency">
+                        <option value="Baht">THB</option>
+                        <option value="Dollar">USD</option>
+                        <option value="Yaun">CNY</option>
+                        <option value="Yen">JPY</option>
+                        <option value="Euro">EUR</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <input type="submit" value="SEARCH">
+                </td>
+            </tr>
+        </Table>
+    </form>
+</body>
+</html>
